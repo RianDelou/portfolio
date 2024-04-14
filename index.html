@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/mainstyle.css">
+    <script src="./main.js" defer></script>
+    <title>Portfólio</title>
+</head>
+<body>
+    <header class = "cabecalho">
+        <nav class = "cabecalho__nav">
+            <button class = "cabecalho__nav__button active" id="button-home">Home</button>
+            <button class = "cabecalho__nav__button" id="button-sobre-mim">Sobre mim</button>
+        </nav>
+            <label class="cabecalho__adicionais">
+                <p class="adicionais__texto-musica">Música :></p>
+                <input type="checkbox" class="adicionais__switch" id ="switch">
+                <div class="adicionais__switch-div"></div>
+            </label>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"> Front-end e back-end de qualidade com um aprendiz! <strong
+                    class="titulo-destaque">(que tenta se esforçar :>)</strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá! me chamo Rian Delou, estou aprendendo a desenvolver em HTML,
+                CSS, javascript, utilizar a biblioteca react e java. Gostaria de ajudar você a colocar em prática boas ideias! ^^</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__texto">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/RianDelou" target="blank"><img class = "apresentacao__links__link__Images" src = "./Images/github.png">GitHub</a>
+                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/rian_delouu/" target="blank"><img class = "apresentacao__links__link__Images" src = "./Images/instagram.png">Instagram</a>
+                <a class="apresentacao__links__navegacao" href="https://www.twitch.tv/deloou" target="blank"><img class = "apresentacao__links__link__Images" src = "./Images/twitch.png">Twitch</a>
+                <a class="apresentacao__links__navegacao" href="https://monkeytype.com/profile/delou" target="blank"><img class = "apresentacao__links__link__Images" src = "./Images/monkeytype.png">Monkeytype</a>
+            </div>
+        </section>
+        <img class = "apresentacao__imagem" src="./Images/kel.jpg" alt="foto 'representando' rian (personagem da foto: kel de OMORI)">
+    </main>
+
+    <footer class = "rodape">
+        <p>Desenvolvido por Rian</p>
+        <p class="creditos">Música: OMORI - By Your Side (melancholy ver.), versão feita por: preepoe</p>
+    </footer>
+
+    <audio class = "audio" src = "Audios\audio.wav" volume = "0.1"></audio>
+</body>
+
+</html>
