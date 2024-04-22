@@ -1,22 +1,21 @@
-// ALTERAR E OTIMIZAR ESSE CÓDIGO ANTES DO ANDAMENTO DO PROJETO
+
 
 const miniListaLinks = document.querySelectorAll(
     ".apresentacao__links__navegacao"
 );
 const checkBoxMusic = document.getElementById("switch");
-const textoMusica = document.querySelector(".adicionais__texto-musica");
-const audio = document.querySelector(".audio");
-const music = new Audio("./Audios/By Your Side (melancholy ver.).mp3"); // TALVEZ ALTERAR ESSE AUDIO PARA OS DOIS AUDIOS PEGAREM POR AQUI
-music.loop = true;
+const textoMusica = document.getElementById("musica-titulo");
+const music = new Audio("./Audios/By Your Side (melancholy ver.).mp3"); //long music
+const audio = new Audio("./Audios/audio.wav"); //short music
 
-function tocaAudio(listaLinks) {
-    for (let i = 0; i < listaLinks.length; i++) {
-        listaLinks[i].addEventListener("click", () => {
-            audio.volume = 0.3;
-            audio.play();
-        });
-    }
-}
+music.loop = true;
+audio.volume = 0.3;
+
+miniListaLinks.forEach(element => {
+    element.addEventListener("click", () => {
+        audio.play();
+    });
+});
 
 checkBoxMusic.addEventListener("change", () => {
     if (checkBoxMusic.checked) {
@@ -27,5 +26,3 @@ checkBoxMusic.addEventListener("change", () => {
         textoMusica.style.color = `#EFF6EE`;
     }
 });
-
-tocaAudio(miniListaLinks);

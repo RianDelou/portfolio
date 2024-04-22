@@ -20,7 +20,7 @@ body {
 
 .cabecalho {
     display: flex;
-    padding: 2% 0% 0% 22.1%; 
+    padding: 2% 0% 0% 22%; 
 }
 
 .cabecalho__nav {
@@ -109,18 +109,25 @@ body {
 }
 
 .apresentacao {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center; 
-   padding: 5% 15%;   
-   gap: 80px;
+   padding: 0% 17% 
 }
 
-.apresentacao__conteudo {
+.container {
     font-family: var(--fonte);
-    width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh; /* toda section vai ter 100% de viewport*/
+    gap: 200px;
+}
+
+.sessao__principal {
+    align-items: center;
+}
+
+.apresentacao__principal {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
@@ -134,13 +141,6 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 1.43rem;
-}
-
-.apresentacao__links {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 20px;
 }
 
 .apresentacao__links__texto {
@@ -177,7 +177,18 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 35%;
+    width: 70%;
+}
+
+.textos-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10%;
+}
+
+.imagem-secundaria {
+    
 }
 
 .rodape {
