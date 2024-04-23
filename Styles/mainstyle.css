@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&display=swap');
 
 :root {
     --corPrimaria: #210124;
     --corSecundaria: #EFF6EE;
     --corTerciaria: #B98EA7;
     --fonte: 'DM Sans', sans-serif;
+    --fonteNome: "Caveat", cursive;
 }
 
 * { /* reset */
@@ -20,12 +22,27 @@ body {
 
 .cabecalho {
     display: flex;
-    padding: 2% 0% 0% 22%; 
+    padding: 2% 0% 0% 17%; 
+    height: 10vh;
+}
+
+.meu-nome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: xx-large;
+    font-family: var(--fonteNome);
+    font-weight: 700;
 }
 
 .cabecalho__nav {
     display: flex;
     gap: 80px;
+    position: absolute;
+    top: 0;
+    margin-top: 1%;
 }
 
 .cabecalho__nav__button {
@@ -56,6 +73,11 @@ body {
     gap: 10px;
     margin-left: 70%;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-right: 2%;
 }
 
 .adicionais__texto-musica {
@@ -108,6 +130,16 @@ body {
     visibility: hidden;
 }
 
+.titulo-principal {
+    font-size: 2.18rem;
+    margin: 5%; /* talvez alterar */
+    text-align: center;
+}
+
+.center {
+    margin-right: 30%; /* maybe change */
+}
+
 .apresentacao {
    padding: 0% 17% 
 }
@@ -116,11 +148,11 @@ body {
     font-family: var(--fonte);
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh; /* toda section vai ter 100% de viewport*/
+    height: calc(90vh - 10px);/* toda section vai ter 100% de viewport*/
     gap: 200px;
 }
 
-.sessao__principal {
+.sessao__home {
     align-items: center;
 }
 
@@ -129,10 +161,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-}
-
-.apresentacao__conteudo__titulo {
-    font-size: 2.18rem;
 }
 
 .titulo-destaque {
@@ -154,7 +182,7 @@ body {
     color: var(--corSecundaria);
     font-size: 1.25rem;
     font-weight: 600;
-    width: 55%;
+    width: 45%;
     text-align: center;
     text-decoration: none;
     border-style: outset;
@@ -180,15 +208,40 @@ body {
     width: 70%;
 }
 
+.apresentacao__conteudo__titulo {
+    font-size: 2.18rem;
+    text-align: center;
+    height: 10vh;
+}
+
+.sessao__sobre-mim {
+    gap: 30px;
+}
+
 .textos-sobre-mim {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 10%;
 }
 
+.imagem-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
 .imagem-secundaria {
-    
+    width: 70%;
+}
+
+.sessao__portfolio {
+    gap: 0;
+}
+
+.portfolio__center {
+    text-align: center;
 }
 
 .rodape {
@@ -255,3 +308,4 @@ body {
 
 }
 /* exemplo de comentario no css*/
+        

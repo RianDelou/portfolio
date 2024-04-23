@@ -11,22 +11,23 @@
 
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__nav"> <!-- AJEITAR ISSO AAAAAA-->
+        <p class="meu-nome">Rian <br>Delou</p>
+        <nav class="cabecalho__nav"> 
             <button class="cabecalho__nav__button active" id="button-home">Home</button>
             <button class="cabecalho__nav__button" id="button-sobre-mim">Sobre mim</button>
+            <button class="cabecalho__nav__button" id="button-portfolio">Portfólio</button>
         </nav>
         <label class="cabecalho__adicionais">
             <p class="adicionais__texto-musica" id="musica-titulo">Música :></p>
             <input type="checkbox" class="adicionais__switch" id="switch">
-            <div class="adicionais__switch-div"></div>
+            <div class="adicionais__switch-div"></div> <!-- talvez ajeitar o tamanho da checkbox-->
         </label>
+            <h1 class="titulo-principal center"> Front-end e back-end de qualidade com um aprendiz! <strong
+                class="titulo-destaque">(que tenta se esforçar :>)</strong></h1>
     </header>
     <main class="apresentacao">
-        <section class="container sessao__principal">
-
+        <section class="container sessao__home">
             <div class="apresentacao__principal">
-            <h1 class="apresentacao__conteudo__titulo"> Front-end e back-end de qualidade com um aprendiz! <strong
-                    class="titulo-destaque">(que tenta se esforçar :>)</strong></h1>
             <p class="apresentacao__conteudo__texto">Olá! me chamo Rian Delou, estou aprendendo a desenvolver em HTML,
                 CSS, javascript, utilizar a biblioteca react e java. Gostaria de ajudar você a colocar em prática boas
                 ideias! ^^</p>
@@ -41,15 +42,18 @@
                 <a class="apresentacao__links__navegacao" href="https://monkeytype.com/profile/delou"
                     target="blank"><img class="apresentacao__links__link__Images"
                         src="./Images/monkeytype.png">Monkeytype</a>
+                <a class="apresentacao__links__navegacao" href="./bulls-and-cows.html"
+                        target="blank"><img class="apresentacao__links__link__Images"
+                        src="./Images/monkeytype.png">Jogo Senha</a>        
             </div>
-            
             <img class="apresentacao__imagem" src="./Images/kel.jpg"
             alt="foto 'representando' rian (personagem da foto: kel de OMORI)">
         </section>
 
-        <section class="container sessao__secundaria">
+        <h1 class="apresentacao__conteudo__titulo">Sobre Mim</h1>
+
+        <section class="container sessao__sobre-mim"> <!-- ajeitar -->
             <div class="textos-sobre-mim">
-            <h1 class="apresentacao__conteudo__titulo">Sobre Mim</h1>
             <p class="apresentacao__conteudo__texto">Considero que sou um estudante que está disposto a florescer,
                 é por esse motivo que estou a
                 procura de desafios maiores para a minha vida acadêmica. Em razão disso, tenho
@@ -61,10 +65,23 @@
                 osu! ou arcaea. Falando sobre músicas, se eu escolhesse 3 gêneros eu escolheria: alternative, jpop e
                 mpb. É isso! ehehe</p>
             </div>
-            <img class="imagem-secundaria" src="./Images/1316529.png" alt="Imagem teste">
+            <div class="imagem-sobre-mim">
+                <img class="imagem-secundaria" src="./Images/1316529.png" alt="Imagem teste">
+            </div>
         </section>
-    </main>
 
+        <h1 class="apresentacao__conteudo__titulo">Portfólio</h1>
+
+        <section class="container sessao__portfolio">
+            <div>
+                <h2 class="portfolio__center">Front-end</h2>
+            </div>
+            <div>
+                <h2 class="portfolio__center">Back-end</h2>
+            </div>
+        </section>
+
+    </main>
     <footer class="rodape">
         <p>Desenvolvido por Rian</p>
         <p class="creditos">Música: OMORI - By Your Side (melancholy ver.), versão feita por: preepoe</p>
