@@ -66,10 +66,6 @@ body {
     background-color: transparent;
 }
 
-.active {
-    color: var(--corSecundaria);
-}
-
 .cabecalho__nav__button:hover {
     color: var(--corSecundaria);
     transition: 0.5s;
@@ -155,11 +151,11 @@ body {
    padding: 0% 17% 
 }
 
-.container {
+.container { /* um padrao de container */
     font-family: var(--fonte);
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 90vh;/* toda section vai ter 90% de viewport (menos a home)*/
+    height: 90vh;
     gap: 200px;
 }
 
@@ -234,7 +230,15 @@ body {
 }
 
 .sessao__sobre-mim {
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3%;
+}
+
+.imagem-secundaria {
+    width: 40%;
 }
 
 .textos-sobre-mim {
@@ -251,16 +255,39 @@ body {
     height: 700px;
 }
 
-.imagem-secundaria {
-    width: 70%;
-}
-
 .sessao__portfolio {
-    gap: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: ce;
+    gap: 50px;
 }
 
 .portfolio__center {
-    text-align: center;
+    font-size: xx-large;
+    color: var(--corTerciaria);
+}
+
+.portfolio__nome-projeto {
+    font-size: x-large;
+}
+
+.portfolio__projeto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 1%;
+}
+
+.portfolio__descricao {
+   font-size: x-large;
+   padding-right: 1%;
+}
+
+.portfolio__imagem {
+    width: 120%;
 }
 
 .rodape {

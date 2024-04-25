@@ -13,7 +13,7 @@
     <header class="cabecalho">
         <p class="meu-nome">Rian <br>Delou</p>
         <nav class="cabecalho__nav">
-            <button class="cabecalho__nav__button active" id="button-home">Home</button>
+            <button class="cabecalho__nav__button" id="button-home">Home</button>
             <button class="cabecalho__nav__button" id="button-sobre-mim">Sobre mim</button>
             <button class="cabecalho__nav__button" id="button-portfolio">Portfólio</button>
         </nav>
@@ -27,8 +27,7 @@
 
         <h1 class="titulo-principal"> Front-end e back-end de qualidade com um aprendiz!<strong
                 class="titulo-destaque">(que tenta se esforçar :>)</strong></h1>
-
-        <section class="container sessao__home">
+        <section class="container sessao__home" id="container-home">
             <div class="apresentacao__principal">
                 <p class="apresentacao__conteudo__texto">Olá! me chamo Rian Delou, estou aprendendo a desenvolver em
                     HTML,
@@ -58,10 +57,10 @@
                 alt="foto 'representando' rian (personagem da foto: kel de OMORI)">
         </section>
 
-        <h1 class="apresentacao__conteudo__titulo">Sobre Mim</h1>
+        <h1 class="apresentacao__conteudo__titulo" id="container-about-me">Sobre Mim</h1>
 
-        <section class="container sessao__sobre-mim"> <!-- ajeitar -->
-            <div class="textos-sobre-mim">
+        <section class="container sessao__sobre-mim"> 
+                <img class="imagem-secundaria" src="./Images/1316529.png" alt="Foto de Rian Delou">
                 <p class="apresentacao__conteudo__texto">Considero que sou um estudante que está disposto a florescer,
                     é por esse motivo que estou a
                     procura de desafios maiores para a minha vida acadêmica. Em razão disso, tenho
@@ -74,28 +73,53 @@
                     como
                     osu! ou arcaea. Falando sobre músicas, se eu escolhesse 3 gêneros eu escolheria: alternative, jpop e
                     mpb. É isso! ehehe</p>
-            </div>
-            <div class="imagem-sobre-mim">
-                <img class="imagem-secundaria" src="./Images/1316529.png" alt="Imagem teste">
-            </div>
         </section>
 
-        <h1 class="apresentacao__conteudo__titulo">Portfólio</h1>
+        <h1 class="apresentacao__conteudo__titulo" id="container-portfolio">Portfólio</h1>
 
         <section class="container sessao__portfolio">
-            <div>
-                <h2 class="portfolio__center">Front-end</h2>
-            </div>
-            <div>
-                <h2 class="portfolio__center">Back-end</h2>
-            </div>
-        </section>
+                <h1 class="portfolio__center">Front-end</h1>    
+                <h2 class="portfolio__nome-projeto">Queue System</h2>
+                <section class="portfolio__projeto">
+                <div>
+                    <p class="portfolio__descricao">Um sistema de fila implementado em: html, css e javascript. O objetivo desse projeto era fazer algo simples e agradável</p>
+                    <p>(clique na imagem para entrar no meu repositorio do github)</p>
+                </div>
+                <a href="https://github.com/RianDelou/QueueSystem" target="_blank"> <img src="./Images/queueSystem.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
+                </section>
 
+                <h2 class="portfolio__nome-projeto">Fokus</h2>
+                <section class="portfolio__projeto">
+                <div>
+                    <p class="portfolio__descricao">Um projeto que desenvolvi o código JavaScript, no qual seu sistema seria basicamente um método para concentração nos estudos e ter o controle do seu tempo nisso.</p>
+                    <p>(clique na imagem para entrar no meu repositorio do github)</p>
+                </div>
+                <a href="https://github.com/RianDelou/Fokus" target="_blank"> <img src="./Images/fokus.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
+                </section>
+
+                <h1 class="portfolio__center">Back-end</h1>  
+                <h2 class="portfolio__nome-projeto">Lexical Analysis</h2>
+                <section class="portfolio__projeto">
+                    <div>
+                        <p class="portfolio__descricao">Uma das partes de um compilador implementado em java, o objeto desse projeto foi compreender o funcionamento do algoritmo de um analisador léxico</p>
+                        <p>(clique na imagem para entrar no meu repositorio do github)</p>
+                    </div>
+                    <a href="https://github.com/RianDelou/analisador-lexico" target="_blank"> <img src="./Images/lexicalAnalysis.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
+                </section>
+
+                <h2 class="portfolio__nome-projeto">Modelo Conceitual, lógico e físico de um BD.</h2>
+                <section class="portfolio__projeto">
+                    <div>
+                        <p class="portfolio__descricao">Desenvolvimento de um modelo conceitual, lógico e físco. Baseado em uma livraria-escola-online. Além disso, foi desenvolvido 7 perguntas para agregar valor ao negócio</p>
+                    </div>
+                    <a href="https://github.com/RianDelou/bd-logical-physical" target="_blank"> <img src="./Images/lexicalAnalysis.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
+                    </section>
+                    
+        </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Rian</p>
         <p class="creditos">Música: OMORI - By Your Side (melancholy ver.), versão feita por: preepoe</p>
     </footer>
 </body>
-
 </html>
