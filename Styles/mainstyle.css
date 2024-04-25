@@ -22,15 +22,25 @@ body {
 
 .cabecalho {
     display: flex;
-    padding: 2% 0% 0% 17%; 
+    padding-left: 17%; 
+    background-color: var(--corTerciaria); 
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );   
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     height: 10vh;
+    z-index: 2; /* coloquei isso para outros elementos que usam position ficar um nivel abaixo desse. Assim, o glass efect vai funcionar tranquilamente */
 }
 
 .meu-nome {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 1%;
+    margin-top: 0.5%;
     margin-left: 2%;
     font-size: xx-large;
     font-family: var(--fonteNome);
@@ -53,6 +63,7 @@ body {
     font-weight: 600;
     border-style: none;
     margin-bottom: 20%;
+    background-color: transparent;
 }
 
 .active {
@@ -70,19 +81,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     margin-left: 70%;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 1%;
+    margin-top: 0.5%;
     margin-right: 2%;
 }
 
 .adicionais__texto-musica {
     font-family: var(--fonte);
-    font-size: 20px;
+    font-size: 18px;
     transition: color 0.25s ease;
 }
 
@@ -90,8 +101,8 @@ body {
     display: inline-block;
     background: #ccc;
     border-radius: 1.6rem;
-    width: 5.8rem;
-    height: 3.2rem;
+    width: 5rem;
+    height: 2.5rem;
     position: relative;
     vertical-align: middle;
     transition: background 0.25s;
@@ -105,11 +116,11 @@ body {
     display: block;
     background: linear-gradient(to bottom, #fff 0%, #eee 100%);
     border-radius: 50%;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
-    top: 0.4rem;
-    left: 0.4rem;
+    top: 0.25rem;
+    left: 0.25rem;
     transition: left 0.25s;
 }
 
@@ -122,7 +133,7 @@ body {
 }
 
 .adicionais__switch:checked + .adicionais__switch-div:before {
-    left: 3rem;
+    left: 2.8rem;
 }
 
 .adicionais__switch {
@@ -131,13 +142,13 @@ body {
 }
 
 .titulo-principal {
-    font-size: 2.18rem;
-    margin: 5%; /* talvez alterar */
+    font-size: 2.18rem; 
     text-align: center;
-}
-
-.center {
-    margin-right: 30%; /* maybe change */
+    position: absolute; /* Posiciona o contêiner do título absolutamente */
+    top: 13%; /* Coloca o contêiner no topo da seção */
+    left: 50%; /* Alinha o contêiner horizontalmente no meio da seção */
+    transform: translateX(-50%); /* Corrige o deslocamento para o centro */
+    z-index: 1;
 }
 
 .apresentacao {
@@ -148,11 +159,12 @@ body {
     font-family: var(--fonte);
     display: grid;
     grid-template-columns: 50% 50%;
-    height: calc(90vh - 10px);/* toda section vai ter 100% de viewport*/
+    height: 90vh;/* toda section vai ter 90% de viewport (menos a home)*/
     gap: 200px;
 }
 
 .sessao__home {
+    height: 100vh;
     align-items: center;
 }
 
@@ -173,6 +185,13 @@ body {
 
 .apresentacao__links__texto {
     font-family: var(--fonte);
+}
+
+.apresentacao__links__style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .apresentacao__links__navegacao {
