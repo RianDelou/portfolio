@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo senha</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/bullsCowsStyle.css" />
+    <script src="./Scripts/bullsCows.js" defer></script>
+    <title>Bulls and cows</title>
+  </head>
+  <body>
+    <main class="center">
+
+      <section class="section-title">
+        <h1>Bulls and Cows<br /></h1>
+        <p class="type-enter"><strong>(press enter to submit)</strong></p>
+      </section>
+
+      <section class="section-game">
+        <input type="text" placeholder="Type a 4 digit number" id="numbers"/>
+
+        <div class="all-results" id="all-results">
+        </div>
+        
+        <button hidden class="button-play-again" id="button-play-again">Play Again</button>
+      </section>
+
+    </main>
+  </body>
 </html>
