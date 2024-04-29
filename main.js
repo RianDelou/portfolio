@@ -42,7 +42,7 @@ navBarElement.forEach( (element, index) => {
     element.addEventListener("click", event => {
         event.preventDefault();
         window.scrollTo({
-        top: aux.offsetTop,
+        top: aux.offsetTop  - (window.innerHeight * 0.1),
         behavior: "smooth"
         });
     });
