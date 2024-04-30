@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
     background-color: var(--corPrimaria);
     color: var(--corSecundaria);
-    font-family: var(--fonteSec);
+    font-family: var(--fonte);
     font-weight: 700;
 }
 
@@ -48,5 +48,49 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
+.input-numbers {
+    font-size: x-large;
+    border: 0;
+    border-bottom: 2px solid var(--corSecundaria);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--corTerciaria);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-align: center;
+}
+
+.win {
+    text-align: center;
+}
+
+.button-play-again {
+    font-family: var(--fonte);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--corSecundaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 9px;
+    border: 2px solid var(--corTerciaria); /* estiliza a borda, o primeiro parametro é o tamanho dela, o segundo é o estilo dela e o terceiro é a cor */ 
+    padding: 5px 0;
+    background-color: var(--corPrimaria);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.button-play-again:hover {
+    border: 2px solid var(--corTerciaria);
+    background-color: var(--corTerciaria);
+    font-weight: 800;
+    transition: 0.4s;
+}

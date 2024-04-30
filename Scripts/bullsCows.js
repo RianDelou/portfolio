@@ -33,14 +33,23 @@ const cowsFunc = () => {
 let StringToNumber = num => Number(num); // usando para o array
 
 let randomizeNumber = () => {
-    let aux = Math.random() * 9000;
-    return Math.floor(1000 + aux);
+    let number;
+    do {
+        number = Math.floor(Math.random() * 9000) + 1000;
+    } while (!hasUniqueDigits(number));
+    return number;
+}
+
+const hasUniqueDigits = (num) => {
+    const digits = num.toString().split('');
+    const uniqueDigits = new Set(digits);
+    return digits.length === uniqueDigits.size;
 }
 
 buttonPlayAgain.addEventListener("click", () => { // reset game
     input.removeAttribute("disabled");
     results.innerHTML = "";
-    buttonPlayAgain.setAttribute("hidden", "");
+    buttonPlayAgain.style.visibility = 'hidden';
 
     matchNumber = randomizeNumber();  
     arrayMatchNumber = Array.from(String(matchNumber), StringToNumber);
@@ -63,9 +72,9 @@ document.addEventListener("keypress", (e) => {
 
     if (matchNumber === parseInt(input.value)) {
         results.innerHTML += `<p class="result" id="result">${parseInt(input.value)} - ${bulls} B | ${cows} C</p>
-                              <p>u win!</p>`;
+                              <p class="win">u win!</p>`;
         input.setAttribute("disabled", "");
-        buttonPlayAgain.removeAttribute("hidden")
+        buttonPlayAgain.style.visibility = 'visible';
         input.value = "";
     } else {
         results.innerHTML += `<p class="result" id="result">${parseInt(input.value)} - ${bulls} B | ${cows} C</p>`;
