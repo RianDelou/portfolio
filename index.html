@@ -1,156 +1,340 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/mainStyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/mainStyle.css" />
     <script src="./Scripts/main.js" defer></script>
     <title>Portfólio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho">
-        <p class="meu-nome">Rian <br>Delou</p>
-        <nav class="cabecalho__nav">
-            <button class="cabecalho__nav__button" id="button-home">Home</button>
-            <button class="cabecalho__nav__button" id="button-sobre-mim">Sobre mim</button>
-            <button class="cabecalho__nav__button" id="button-habilidades">Habilidades</button>
-            <button class="cabecalho__nav__button" id="button-portfolio">Portfólio</button>
-        </nav>
-        <label class="cabecalho__adicionais">
-            <p class="adicionais__texto-musica" id="musica-titulo">Música</p>
-            <input type="checkbox" class="adicionais__switch" id="switch">
-            <div class="adicionais__switch-div"></div> 
-        </label>
+      <p class="meu-nome">Rian <br />Delou</p>
+      <nav class="cabecalho__nav">
+        <button class="cabecalho__nav__button" id="button-home">Home</button>
+        <button class="cabecalho__nav__button" id="button-sobre-mim">
+          Sobre mim
+        </button>
+        <button class="cabecalho__nav__button" id="button-habilidades">
+          Habilidades
+        </button>
+        <button class="cabecalho__nav__button" id="button-portfolio">
+          Portfólio
+        </button>
+        <button class="cabecalho__nav__button" id="button-contato">
+          Contato
+        </button>
+      </nav>
+      <label class="cabecalho__adicionais">
+        <p class="adicionais__texto-musica" id="musica-titulo">Música</p>
+        <input type="checkbox" class="adicionais__switch" id="switch" />
+        <div class="adicionais__switch-div"></div>
+      </label>
     </header>
     <main class="apresentacao">
+      <h1 class="titulo-principal">
+        Front-end e back-end de qualidade com um aprendiz!<strong
+          class="titulo-destaque"
+          ><br />(que tenta se esforçar :>)</strong
+        >
+      </h1>
+      <section class="container secao__home" id="container-home">
+        <div class="apresentacao__principal">
+          <p class="apresentacao__conteudo__texto">
+            Olá! me chamo Rian Delou, estou aprendendo a desenvolver em HTML,
+            CSS, javascript, utilizar a biblioteca react e java. Gostaria de
+            ajudar você a colocar em prática boas ideias! ^^
+          </p>
+          <h2 class="apresentacao__links__texto">Acesse minhas redes!</h2>
+          <div class="apresentacao__links__style">
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://github.com/RianDelou"
+              target="blank"
+              ><img
+                class="apresentacao__links__link__Images"
+                src="./Images/github.png"
+              />GitHub</a
+            >
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://www.instagram.com/rian_delouu/"
+              target="blank"
+              ><img
+                class="apresentacao__links__link__Images"
+                src="./Images/instagram.png"
+              />Instagram</a
+            >
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://www.twitch.tv/deloou"
+              target="blank"
+              ><img
+                class="apresentacao__links__link__Images"
+                src="./Images/twitch.png"
+              />Twitch</a
+            >
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://monkeytype.com/profile/delou"
+              target="blank"
+              ><img
+                class="apresentacao__links__link__Images"
+                src="./Images/monkeytype.png"
+              />Monkeytype</a
+            >
+          </div>
+          <h2 class="apresentacao__links__texto">
+            Jogo que o professor solicitou
+          </h2>
+          <div class="apresentacao__links__style">
+            <a
+              class="apresentacao__links__navegacao"
+              href="./bulls-and-cows.html"
+              target="blank"
+              ><img
+                class="apresentacao__links__link__Images"
+                src="./Images/controle.png"
+              />Bulls & Cows</a
+            >
+          </div>
+        </div>
+        <img
+          class="apresentacao__imagem"
+          src="./Images/kel.jpg"
+          alt="foto 'representando' rian (personagem da foto: kel de OMORI)"
+        />
+      </section>
 
-        <h1 class="titulo-principal"> Front-end e back-end de qualidade com um aprendiz!<strong
-                class="titulo-destaque"><br>(que tenta se esforçar :>)</strong></h1>
-        <section class="container secao__home" id="container-home">
-            <div class="apresentacao__principal">
-                <p class="apresentacao__conteudo__texto">Olá! me chamo Rian Delou, estou aprendendo a desenvolver em
-                    HTML,
-                    CSS, javascript, utilizar a biblioteca react e java. Gostaria de ajudar você a colocar em prática
-                    boas
-                    ideias! ^^</p>
-                <h2 class="apresentacao__links__texto">Acesse minhas redes!</h2>
-                <div class="apresentacao__links__style">
-                    <a class="apresentacao__links__navegacao" href="https://github.com/RianDelou" target="blank"><img
-                            class="apresentacao__links__link__Images" src="./Images/github.png">GitHub</a>
-                    <a class="apresentacao__links__navegacao" href="https://www.instagram.com/rian_delouu/"
-                        target="blank"><img class="apresentacao__links__link__Images"
-                            src="./Images/instagram.png">Instagram</a>
-                    <a class="apresentacao__links__navegacao" href="https://www.twitch.tv/deloou" target="blank"><img
-                            class="apresentacao__links__link__Images" src="./Images/twitch.png">Twitch</a>
-                    <a class="apresentacao__links__navegacao" href="https://monkeytype.com/profile/delou"
-                        target="blank"><img class="apresentacao__links__link__Images"
-                            src="./Images/monkeytype.png">Monkeytype</a>
-                </div>
-                <h2 class="apresentacao__links__texto">Jogo que o professor solicitou</h2>
-                <div class="apresentacao__links__style">
-                    <a class="apresentacao__links__navegacao" href="./bulls-and-cows.html" target="blank"><img
-                            class="apresentacao__links__link__Images" src="./Images/monkeytype.png">Bulls & Cows</a>
-                </div>
-            </div>
-            <img class="apresentacao__imagem" src="./Images/kel.jpg"
-                alt="foto 'representando' rian (personagem da foto: kel de OMORI)">
+      <h1 class="apresentacao__conteudo__titulo" id="container-about-me">
+        Sobre Mim
+      </h1>
+
+      <section class="container secao__sobre-mim">
+        <div class="sobre-mim__textos">
+          <img src="./Images/basil.png" alt="Imagem do basil (OMORI)" class="imagem-basil">
+          <p class="apresentacao__conteudo__texto">
+            Considero que sou um estudante que está disposto a florescer, é por
+            esse motivo que estou a procura de desafios maiores para a minha
+            vida acadêmica. Em razão disso, tenho convicção de que estou aberto
+            para diversas oportunidades, para que eu apresente e desenvolva com
+            mais detalhes as minhas competências de trabalho em equipe,
+            autonomia e liderança.
+          </p>
+          <p class="apresentacao__conteudo__texto">
+            Falando de outras coisas que gosto de fazer... Eu amo jogar! meus 3
+            jogos favoritos seriam: omori, hollow knight e outer wilds. Além
+            disso, curto muito jogos de ritmo, como osu! ou arcaea. Para
+            finalizar, sair com amigos e família é algo que gosto bastante
+            também!
+          </p>
+        </div>
+        <img
+          class="imagem-secundaria"
+          src="./Images/1316529.png"
+          alt="Foto de Rian Delou"
+        />
+      </section>
+
+      <h1 class="apresentacao__conteudo__titulo" id="container-habilidades">
+        Habilidades
+      </h1>
+
+      <section class="container secao__habilidades">
+        <div class="mirror-filter java-section">
+          <img
+            src="./Images/Java-Logo.png"
+            alt="java logo"
+            class="habilidades__imagem"
+          />
+          <p class="texto-especifico">(acho a logo antiga mais bonita)</p>
+          <p class="habilidades__texto">
+            A linguagem que comecei a programar. Tenho um conhecimento profundo
+            em sua sintaxe e estou sempre buscando aprimorar / manter a
+            consistência.
+          </p>
+        </div>
+        <div class="mirror-filter node-section">
+          <img
+            src="./Images/node logo.png"
+            alt="node logo"
+            class="habilidades__imagem node"
+          />
+          <p class="habilidades__texto">
+            Tenho um conhecimento abrangente do node, como por exemplo:
+            utilizar, manipular e executar inúmeros pacotes/dependências (NPM &&
+            NPX), para facilitar no desenvolvimento do software.
+          </p>
+        </div>
+        <div class="mirror-filter">
+          <img
+            src="./Images/JavaScript-Logo.png"
+            alt="JS logo"
+            class="habilidades__imagem"
+          />
+          <p class="habilidades__texto">
+            Estou sempre aprimorando meus conhecimentos com JS constantemente em
+            busca do typescript.
+          </p>
+        </div>
+        <div class="mirror-filter">
+          <img
+            src="./Images/HTML5Logo.png"
+            alt="HTML 5 Logo"
+            class="habilidades__imagem html"
+          />
+          <p class="habilidades__texto">
+            Estou bastante familiarizado com diversas tags html, incluindo todas
+            as tags semânticas.
+          </p>
+        </div>
+        <div class="mirror-filter">
+          <img
+            src="./Images/css-logo.png"
+            alt="CSS logo"
+            class="habilidades__imagem css"
+          />
+          <p class="habilidades__texto">
+            Tenho um conhecimento extremamente sólido com css, principalmente
+            com os displays: flex / grid.
+          </p>
+        </div>
+        <div class="mirror-filter">
+          <img
+            src="./Images/react logo.png"
+            alt="react logo"
+            class="habilidades__imagem react"
+          />
+          <p class="habilidades__texto">
+            React é uma library que estou aprendendo no momento. Porém, estou
+            atualmente aprofundando meus conhecimentos nela para começar a
+            desenvolver softwares com react.js.
+          </p>
+        </div>
+      </section>
+
+      <h1 class="apresentacao__conteudo__titulo" id="container-portfolio">
+        Portfólio
+      </h1>
+
+      <section class="container secao__portfolio">
+        <h1 class="portfolio__center">Front-end</h1>
+        <h2 class="portfolio__nome-projeto">Queue System</h2>
+        <section class="portfolio__projeto">
+          <div>
+            <p class="portfolio__descricao">
+              Um sistema de fila implementado em: html, css e javascript. O
+              objetivo desse projeto era fazer algo simples e agradável, além de
+              colocar em prática o js.
+            </p>
+            <p class="texto-especifico">
+              (clique na imagem para entrar no meu repositorio do github)
+            </p>
+          </div>
+          <a href="https://github.com/RianDelou/QueueSystem" target="_blank">
+            <img
+              src="./Images/queueSystem.png"
+              alt="imagem de uma prévia do projeto"
+              class="portfolio__imagem"
+            />
+          </a>
         </section>
 
-        <h1 class="apresentacao__conteudo__titulo" id="container-about-me">Sobre Mim</h1>
-
-        <section class="container secao__sobre-mim"> 
-                <img class="imagem-secundaria" src="./Images/1316529.png" alt="Foto de Rian Delou">
-                <p class="apresentacao__conteudo__texto">Considero que sou um estudante que está disposto a florescer,
-                    é por esse motivo que estou a
-                    procura de desafios maiores para a minha vida acadêmica. Em razão disso, tenho
-                    convicção de que estou aberto para diversas oportunidades, para que eu
-                    apresente e desenvolva com mais detalhes as minhas competências de trabalho
-                    em equipe, autonomia e liderança.</p>
-                <p class="apresentacao__conteudo__texto"> Falando de outras coisas sobre mim também... Eu amo jogar!
-                    meus 3
-                    jogos favoritos seriam: omori, hollow knight e outer wilds. Além disso, curto muito jogos de ritmo,
-                    como
-                    osu! ou arcaea. Falando sobre músicas, se eu escolhesse 3 gêneros eu escolheria: alternative, jpop e
-                    mpb. É isso! ehehe</p>
+        <h2 class="portfolio__nome-projeto">Fokus</h2>
+        <section class="portfolio__projeto">
+          <div>
+            <p class="portfolio__descricao">
+              Um projeto que desenvolvi o código JavaScript, no qual seu sistema
+              seria basicamente um método para concentração nos estudos e ter o
+              controle do seu tempo nisso.
+            </p>
+            <p class="texto-especifico">
+              (clique na imagem para entrar no meu repositorio do github)
+            </p>
+          </div>
+          <a href="https://github.com/RianDelou/Fokus" target="_blank">
+            <img
+              src="./Images/fokus.png"
+              alt="imagem de uma prévia do projeto"
+              class="portfolio__imagem"
+            />
+          </a>
         </section>
 
-        <h1 class="apresentacao__conteudo__titulo" id="container-habilidades">Habilidades</h1>
-
-        <section class="container secao__habilidades"> 
-                <div class="mirror-filter">
-                    <img src="./Images/JavaScript-Logo.png" alt="JS logo" class="habilidades__imagem">
-                    <p class="habilidades__texto">Estou sempre aprimorando meus conhecimentos com JS constantemente, em busca do typescript</p>
-                </div>
-                <div class="mirror-filter">
-                    <p></p>
-                    <img src="" alt="">
-                </div>
-                <div class="mirror-filter">
-                    <p></p>
-                    <img src="" alt="">
-                </div>
-                <div class="mirror-filter">
-                    <p></p>
-                    <img src="" alt="">
-                </div>
-                <div class="mirror-filter">
-                    <p></p>
-                    <img src="" alt="">
-                </div>
-                <div class="mirror-filter">
-                    <p></p>
-                    <img src="" alt="">
-                </div>
+        <h1 class="portfolio__center">Back-end</h1>
+        <h2 class="portfolio__nome-projeto">Lexical Analysis</h2>
+        <section class="portfolio__projeto">
+          <div>
+            <p class="portfolio__descricao">
+              Uma das partes de um compilador implementado em java, o objetivo
+              desse projeto foi compreender o funcionamento do algoritmo de um
+              analisador léxico
+            </p>
+            <p class="texto-especifico">
+              (clique na imagem para entrar no meu repositorio do github)
+            </p>
+          </div>
+          <a
+            href="https://github.com/RianDelou/analisador-lexico"
+            target="_blank"
+          >
+            <img
+              src="./Images/lexicalAnalysis.png"
+              alt="imagem de uma prévia do projeto"
+              class="portfolio__imagem"
+            />
+          </a>
         </section>
 
-        <h1 class="apresentacao__conteudo__titulo" id="container-portfolio">Portfólio</h1>
-
-        <section class="container secao__portfolio">
-                <h1 class="portfolio__center">Front-end</h1>    
-                <h2 class="portfolio__nome-projeto">Queue System</h2>
-                <section class="portfolio__projeto">
-                <div>
-                    <p class="portfolio__descricao">Um sistema de fila implementado em: html, css e javascript. O objetivo desse projeto era fazer algo simples e agradável, além de colocar em prática o js.</p>
-                    <p>(clique na imagem para entrar no meu repositorio do github)</p>
-                </div>
-                <a href="https://github.com/RianDelou/QueueSystem" target="_blank"> <img src="./Images/queueSystem.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
-                </section>
-
-                <h2 class="portfolio__nome-projeto">Fokus</h2>
-                <section class="portfolio__projeto">
-                <div>
-                    <p class="portfolio__descricao">Um projeto que desenvolvi o código JavaScript, no qual seu sistema seria basicamente um método para concentração nos estudos e ter o controle do seu tempo nisso.</p>
-                    <p>(clique na imagem para entrar no meu repositorio do github)</p>
-                </div>
-                <a href="https://github.com/RianDelou/Fokus" target="_blank"> <img src="./Images/fokus.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
-                </section>
-
-                <h1 class="portfolio__center">Back-end</h1>  
-                <h2 class="portfolio__nome-projeto">Lexical Analysis</h2>
-                <section class="portfolio__projeto">
-                    <div>
-                        <p class="portfolio__descricao">Uma das partes de um compilador implementado em java, o objetivo desse projeto foi compreender o funcionamento do algoritmo de um analisador léxico</p>
-                        <p>(clique na imagem para entrar no meu repositorio do github)</p>
-                    </div>
-                    <a href="https://github.com/RianDelou/analisador-lexico" target="_blank"> <img src="./Images/lexicalAnalysis.png" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
-                </section>
-
-                <h2 class="portfolio__nome-projeto">Modelo Conceitual, lógico e físico de um BD.</h2>
-                <section class="portfolio__projeto last">
-                    <div>
-                        <p class="portfolio__descricao">Desenvolvimento de um modelo conceitual, lógico e físco. Baseado em uma livraria-escola-online. Além disso, foi desenvolvido 7 perguntas para agregar valor ao negócio</p>
-                        <p>(clique na imagem para entrar no meu repositorio do github)</p>
-                    </div>
-                    <a href="https://github.com/RianDelou/bd-logical-physical" target="_blank"> <img src="./Images/Modelo_Lógico.jpeg" alt="imagem de uma prévia do projeto" class="portfolio__imagem"> </a>
-                    </section>
-                    
+        <h2 class="portfolio__nome-projeto">
+          Sistema de Gerenciamento de Banco de Dados
+        </h2>
+        <section class="portfolio__projeto last">
+          <div>
+            <p class="portfolio__descricao">
+              Desenvolvimento de um modelo conceitual, lógico e físco. Baseado
+              em uma livraria-escola-online. Além disso, foi desenvolvido 6
+              perguntas para agregar valor ao negócio. Todas elas automatizadas
+              com o DQL.
+            </p>
+            <p class="texto-especifico">
+              (clique na imagem para entrar no meu repositorio do github)
+            </p>
+          </div>
+          <a
+            href="https://github.com/RianDelou/bd-logical-physical"
+            target="_blank"
+          >
+            <img
+              src="./Images/Modelo_Lógico.jpeg"
+              alt="imagem de uma prévia do projeto"
+              class="portfolio__imagem"
+            />
+          </a>
         </section>
+      </section>
+
+      <h2 class="apresentacao__conteudo__titulo" id="container-contato">Contato</h2>
+      <section class="container secao__contato">
+        <form action="https://formsubmit.co/riandelou@gmail.com" method="POST" class="form-email">
+          <input type="text" name="name" required placeholder="Digite seu nome" class="contato__input">
+          <input type="email" name="email" required placeholder="Digite seu e-mail" class="contato__input">
+          <textarea cols="30" rows="10" name="message" placeholder="Digite sua mensagem" required class="contato__input msg"></textarea>
+          <button type="submit" class="contato__button">Enviar</button>
+          <input type="hidden" name="_subject" value="Novo Contato!">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Rian</p>
-        <p class="creditos">Música: OMORI - By Your Side (melancholy ver.), versão feita por: preepoe</p>
+        <p class="creditos">
+          Música: OMORI - By Your Side (melancholy ver.), versão feita por:
+          preepoe
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

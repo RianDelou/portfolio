@@ -9,9 +9,9 @@ const containerHome = document.getElementById("container-home");
 const containerAboutMe = document.getElementById("container-about-me");
 const containerHabilidades = document.getElementById("container-habilidades");
 const containerPortfolio = document.getElementById("container-portfolio");
+const containerContato = document.getElementById("container-contato");
 const music = new Audio("./Audios/By Your Side (melancholy ver.).mp3"); //long music
 const audio = new Audio("./Audios/audio.wav"); //short music
-
 music.loop = true;
 audio.volume = 0.3;
 
@@ -41,6 +41,8 @@ navBarElement.forEach( (element, index) => {
         aux = containerHabilidades;
     } else if (index === 3) {
         aux = containerPortfolio;
+    } else if (index == 4) {
+        aux = containerContato;
     }
     element.addEventListener("click", event => {
         event.preventDefault();

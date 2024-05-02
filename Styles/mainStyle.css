@@ -217,7 +217,6 @@ body {
 .apresentacao__links__link__Images {
     width: 10%; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
     filter: grayscale(100%) brightness(0) invert(100%); /* deixando a imagem branca */ 
-      
 }
 
 .apresentacao__imagem {
@@ -232,16 +231,28 @@ body {
     width: 100%;
 }
 
+.imagem-basil {
+    width: 50%;
+}
+
 .secao__sobre-mim {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1%;
 }
 
+.sobre-mim__textos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .imagem-secundaria {
     width: 40%;
+    margin-bottom: 40%;
 }
 
 .textos-sobre-mim {
@@ -285,9 +296,38 @@ body {
 }
 
 .habilidades__texto {
-    font-size: 110%;
+    font-size: 105%;
     text-align: center;
     margin: 0 5% 0 5%;
+}
+
+.html {
+    width: 27%;
+}
+
+.css {
+    width: 19.5%;
+}
+
+.node {
+    width: 53%;
+}
+
+.node-section {
+    gap: 0;
+}
+
+.java-section {
+    gap: 1%;
+}
+
+.react {
+    width: 25%;
+}
+
+.texto-especifico {
+    font-size: larger;
+    font-family: var(--fonteNome);
 }
 
 .secao__portfolio {
@@ -327,6 +367,63 @@ body {
 .portfolio__imagem {
     width: 120%;
     height: 400px;
+}
+
+.secao__contato {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato__input {
+    font-size: x-large;
+    border: 0;
+    border-bottom: 2px solid var(--corSecundaria);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--corSecundaria);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-align: center;
+}
+
+.msg {
+    resize: none;
+    border: 2px solid var(--corSecundaria);
+    border-radius: 10px;
+}
+
+.contato__button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--corSecundaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 13px;
+    border: 2px solid var(--corTerciaria); /* estiliza a borda, o primeiro parametro é o tamanho dela, o segundo é o estilo dela e o terceiro é a cor */ 
+    padding: 14px 0;
+    background-color: var(--corPrimaria);
+    cursor: pointer;
+}
+
+.contato__button:hover {
+    border: 2px solid var(--corTerciaria);
+    background-color: var(--corTerciaria);
+    transition: 0.4s;
 }
 
 .rodape {
