@@ -137,13 +137,15 @@ body {
 }
 
 .titulo-principal {
-    font-size: 2.18rem; 
+    font-size: 200%; 
     text-align: center;
     position: absolute; /* Posiciona o contêiner do título absolutamente */
-    top: 11.5%; /* Coloca o contêiner no topo da seção */
+    top: 12.5%; /* Coloca o contêiner no topo da seção */
     left: 50%; /* Alinha o contêiner horizontalmente no meio da seção */
     transform: translateX(-50%); /* Corrige o deslocamento para o centro */
     z-index: 1;
+    display: inline-block;
+    width: 100%;
 }
 
 .apresentacao {
@@ -158,7 +160,7 @@ body {
     gap: 200px;
 }
 
-.sessao__home {
+.secao__home {
     height: 100vh;
     align-items: center;
 }
@@ -226,14 +228,16 @@ body {
     font-size: 2.18rem;
     text-align: center;
     height: 10vh;
+    display: inline-block;
+    width: 100%;
 }
 
-.sessao__sobre-mim {
+.secao__sobre-mim {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3%;
+    gap: 1%;
 }
 
 .imagem-secundaria {
@@ -249,18 +253,49 @@ body {
 .imagem-sobre-mim {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 700px;
 }
 
-.sessao__portfolio {
+.secao__habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.mirror-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap: 10%;
+    height: 30%;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.habilidades__imagem {
+    width: 50%;
+}
+
+.habilidades__texto {
+    font-size: 110%;
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
+
+.secao__portfolio {
     height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: ce;
     gap: 50px;
 }
 

@@ -7,6 +7,7 @@ const textoMusica = document.getElementById("musica-titulo");
 const navBarElement = document.querySelectorAll(".cabecalho__nav__button");
 const containerHome = document.getElementById("container-home");
 const containerAboutMe = document.getElementById("container-about-me");
+const containerHabilidades = document.getElementById("container-habilidades");
 const containerPortfolio = document.getElementById("container-portfolio");
 const music = new Audio("./Audios/By Your Side (melancholy ver.).mp3"); //long music
 const audio = new Audio("./Audios/audio.wav"); //short music
@@ -37,6 +38,8 @@ navBarElement.forEach( (element, index) => {
     } else if (index === 1) {
         aux = containerAboutMe;
     } else if (index === 2) {
+        aux = containerHabilidades;
+    } else if (index === 3) {
         aux = containerPortfolio;
     }
     element.addEventListener("click", event => {
