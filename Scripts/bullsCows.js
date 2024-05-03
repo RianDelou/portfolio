@@ -77,7 +77,7 @@ document.addEventListener("keypress", (e) => {
         stackPrevent.push(arrayInputNumbers[i]);
     }
     stackPrevent = [];
-
+    alertText.textContent = "";
     bulls = 0;
     cows = 0;
 
