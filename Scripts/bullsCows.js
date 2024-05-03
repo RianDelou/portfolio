@@ -7,7 +7,7 @@ let arrayInputNumbers = [];
 let arrayMatchNumber = [];
 let bulls = 0;
 let cows = 0;
-
+let stackPrevent = [];
 const bullsFunc = () => {
     arrayInputNumbers.forEach((element, index) => {
         arrayMatchNumber.forEach((elementToMatch, indexToMatch) => {
@@ -59,18 +59,27 @@ buttonPlayAgain.addEventListener("click", () => { // reset game
 });
 
 document.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    if (input.value === "") {
-        alertText.textContent = "Resposta vazia, digite 4 números.";
+  if (e.key === "Enter") { 
+
+    if (input.value === "" || input.value <= 999 || input.value >= 10000) { //caso padrao
+        alertText.textContent = "O jogo funciona apenas com 4 digitos diferentes.";
         return;
-    } else if (input.value <= 999 || input.value >= 10000) {
-        alertText.textContent = "O jogo funciona apenas com 4 digitos";
-        return;
+    } 
+
+    arrayInputNumbers = Array.from(String(parseInt(input.value)), StringToNumber);
+
+    for (let i = 0; i < arrayMatchNumber.length; i++) { //caso padrao
+        if (stackPrevent.includes(arrayInputNumbers[i])) {
+            alertText.textContent = "Não é permitido número repetido, apenas 4 digitos diferentes.";
+            stackPrevent = [];
+            return;
+        }
+        stackPrevent.push(arrayInputNumbers[i]);
     }
+    stackPrevent = [];
 
     bulls = 0;
     cows = 0;
-    arrayInputNumbers = Array.from(String(parseInt(input.value)), StringToNumber);
 
     bullsFunc();
     cowsFunc();
