@@ -1,6 +1,7 @@
 const input = document.getElementById("numbers");
 const results = document.getElementById("all-results");
 const buttonPlayAgain = document.getElementById("button-play-again");
+const alertText = document.getElementById("alert");
 let matchNumber = 0;
 let arrayInputNumbers = [];
 let arrayMatchNumber = [];
@@ -59,8 +60,12 @@ buttonPlayAgain.addEventListener("click", () => { // reset game
 
 document.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    if (true) {
-        // CRIAR CASO PADRAO
+    if (input.value === "") {
+        alertText.textContent = "Resposta vazia, digite 4 números.";
+        return;
+    } else if (input.value <= 999 || input.value >= 10000) {
+        alertText.textContent = "O jogo funciona apenas com 4 digitos";
+        return;
     }
 
     bulls = 0;

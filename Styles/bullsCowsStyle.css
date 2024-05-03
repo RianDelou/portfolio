@@ -51,6 +51,14 @@ body {
     gap: 20px;
 }
 
+.alert-text {
+    color: red;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
 .input-numbers {
     font-size: x-large;
     border: 0;
@@ -62,6 +70,7 @@ body {
     background: transparent;
     transition: border-color 0.2s;
     text-align: center;
+    
 }
 
 .win {
