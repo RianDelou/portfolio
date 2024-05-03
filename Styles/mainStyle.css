@@ -160,7 +160,7 @@ body {
     gap: 200px;
 }
 
-.sessao__home {
+.secao__home {
     height: 100vh;
     align-items: center;
 }
@@ -235,7 +235,7 @@ body {
     width: 50%;
 }
 
-.sessao__sobre-mim {
+.secao__sobre-mim {
     display: flex;
     align-items: center;
     text-align: center;
@@ -268,7 +268,7 @@ body {
     height: 700px;
 }
 
-.sessao__habilidades {
+.secao__habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -330,7 +330,7 @@ body {
     font-family: var(--fonteNome);
 }
 
-.sessao__portfolio {
+.secao__portfolio {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -369,7 +369,7 @@ body {
     height: 400px;
 }
 
-.sessao__contato {
+.secao__contato {
     display: flex;
     justify-content: center;
     height: auto;
