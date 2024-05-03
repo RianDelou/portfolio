@@ -34,11 +34,15 @@ const cowsFunc = () => {
 let StringToNumber = num => Number(num); // usando para o array
 
 let randomizeNumber = () => {
-    let number;
     do {
-        number = Math.floor(Math.random() * 9000) + 1000;
-    } while (!hasUniqueDigits(number));
-    return number;
+        for (let i = 0; i < 4; i++) {
+            arrayMatchNumber[i] = Math.floor(Math.random() * 10); // Gerar um número de 4 dígitos
+        }
+
+    } while (!hasUniqueDigits(arrayMatchNumber.join(""))); // Garantir que tenha 4 dígitos e todos sejam únicos.padStart(4, '0'); // Garantir que o número tenha 4 dígitos e preencher com zero à esquerda se necessário
+
+
+    return arrayMatchNumber.join("");
 }
 
 const hasUniqueDigits = (num) => {
@@ -53,20 +57,17 @@ buttonPlayAgain.addEventListener("click", () => { // reset game
     buttonPlayAgain.style.visibility = 'hidden';
 
     matchNumber = randomizeNumber();  
-    arrayMatchNumber = Array.from(String(matchNumber), StringToNumber);
-    console.log(arrayMatchNumber);
-    console.log(matchNumber);
 });
 
 document.addEventListener("keypress", (e) => {
   if (e.key === "Enter") { 
 
-    if (input.value === "" || input.value <= 999 || input.value >= 10000) { //caso padrao
+    arrayInputNumbers = Array.from(String(input.value), StringToNumber);
+
+    if (input.value === "" || arrayInputNumbers.length !== 4) { //caso padrao
         alertText.textContent = "O jogo funciona apenas com 4 digitos diferentes.";
         return;
     } 
-
-    arrayInputNumbers = Array.from(String(parseInt(input.value)), StringToNumber);
 
     for (let i = 0; i < arrayMatchNumber.length; i++) { //caso padrao
         if (stackPrevent.includes(arrayInputNumbers[i])) {
@@ -84,18 +85,17 @@ document.addEventListener("keypress", (e) => {
     bullsFunc();
     cowsFunc();
 
-    if (matchNumber === parseInt(input.value)) {
-        results.innerHTML += `<p class="result" id="result">${parseInt(input.value)} - ${bulls} B | ${cows} C</p>
+    if (matchNumber === input.value) {
+        results.innerHTML += `<p class="result" id="result">${input.value} - ${bulls} B | ${cows} C</p>
                               <p class="win">u win!</p>`;
         input.setAttribute("disabled", "");
         buttonPlayAgain.style.visibility = 'visible';
         input.value = "";
     } else {
-        results.innerHTML += `<p class="result" id="result">${parseInt(input.value)} - ${bulls} B | ${cows} C</p>`;
+        results.innerHTML += `<p class="result" id="result">${input.value} - ${bulls} B | ${cows} C</p>`;
         input.value = "";
     }
   }
 });
 
 matchNumber = randomizeNumber(); //Executar por padrao uma vez
-arrayMatchNumber = Array.from(String(matchNumber), StringToNumber); //Executar por padrao uma vez (isso converte todos os nums para um array de 0 a 3)
