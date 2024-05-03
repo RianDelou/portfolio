@@ -90,6 +90,3 @@ document.addEventListener("keypress", (e) => {
 
 matchNumber = randomizeNumber(); //Executar por padrao uma vez
 arrayMatchNumber = Array.from(String(matchNumber), StringToNumber); //Executar por padrao uma vez (isso converte todos os nums para um array de 0 a 3)
-
-console.log(arrayMatchNumber);
-console.log(matchNumber);
